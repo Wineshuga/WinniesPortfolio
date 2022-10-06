@@ -1,4 +1,4 @@
-    /*colors for the whole site = brown whitesmoke burlywood #ee8f8f antiquewhite (neutral colors)*/
+/*colors for the whole site = brown whitesmoke burlywood #ee8f8f antiquewhite (neutral colors)*/
 body {
     background-color: antiquewhite;
 }
@@ -13,23 +13,20 @@ img {
 }
 
 .welcome {
-    font-size:220%;
-    font-stretch:extra-expanded;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:brown;
-    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
     text-align: center;
 }
 
-.nav {
-    display: flex;
-    justify-content: center;
+hr {
+    color: burlywood;
+}
+
+nav {
+    text-align: center;
     font-size: 20px;
 }
 
-.nav a {
-    padding: 2px 70px;
-}
 a:link {
     color: brown;
     text-decoration: none;
@@ -38,6 +35,7 @@ a:link {
 a:visited {
     color: brown;
 }
+
 a:hover {
     color: whitesmoke;
 }
@@ -46,51 +44,11 @@ a:active {
     color: brown;
 }
 
-.main {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+main {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: brown;
-    font-style:italic;
+    font-style: italic;
     font-size: large;
-}
-.contact {
-    padding: 10px 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-input[type=text] {
-    margin: 0px 0px 0px 10px;
-    width: 50%;
-}
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-#msg{
-    width: 50%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    background-color: whitesmoke;
-    resize: none;
-}
-.login {
-    width: 300px;
-    padding: 10px 10px 0px 30px;
-    border-style: solid;
-    border-width: 2px;
-    margin-left: 35%;
-    margin-top: 5%;
-}
-
-.reg {
-    width: 600px;
-    padding: 10px 10px 5% 30px;
-    border-style: solid;
-    border-width: 2px;
-    margin-left:320px;
-    margin-top: 5%;
 }
 
 table {
@@ -100,12 +58,4 @@ table {
 
 thead {
     text-align: left;
-}
-input[type=button], input[type=submit] {
-    background-color: burlywood;
-    width: 100px;
-    height: 30px;
-    border-color: brown;
-    cursor: pointer;
-    border-radius: 8px;
 }
