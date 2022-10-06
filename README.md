@@ -1,8 +1,10 @@
 <html>
 <head></head>
 <body>
-<h1>First Website Project</h1>
-<p>This is my very first project since I started my frontend journey</p>
+<h1>Winnie's Portfolio</h1>
+<p>This started out as a project given during Zuri/HNG Internship. It happened to be my very first attempt at building a website.
+After several months, I am back to make some changes and turn it into a portfolio site.
+Some unnecessary pages were taken out: a contact page, registration page and a login page. This is now a one page portfolio site</p>
 <h3>Languages</h3>
 <ul>
 <li>HTML</li>
