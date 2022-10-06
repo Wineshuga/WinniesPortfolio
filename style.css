@@ -1,61 +1,68 @@
-/*colors for the whole site = brown whitesmoke burlywood #ee8f8f antiquewhite (neutral colors)*/
+:root {
+    --main-color: antiquewhite;
+    --line-color: burlywood;
+    --text-color: brown;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: antiquewhite;
-}
-
-img {
-    width: 28%;
-    height: 30%;
-    margin: 10px;
-    margin-top: 4px;
-    margin-right: 14px;
-    float: left;
-}
-
-.welcome {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: brown;
-    text-align: center;
+    background-color: white;
 }
 
 hr {
-    color: burlywood;
+    background-color: var(--line-color);
+    height: 2px;
+    border: none;
 }
 
 nav {
     text-align: center;
     font-size: 20px;
+    padding: 2rem;
+    background-color: var(--line-color);
+    position: fixed;
+    width: 100%;
 }
 
-a:link {
-    color: brown;
-    text-decoration: none;
-}
-
-a:visited {
-    color: brown;
-}
-
-a:hover {
-    color: whitesmoke;
-}
-
-a:active {
-    color: brown;
+nav a {
+    color: var(--text-color);
 }
 
 main {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: brown;
-    font-style: italic;
-    font-size: large;
+    color: var(--text-color);
+    max-width: 750px;
+    margin: auto;
+    padding-top: 20vh;
 }
 
-table {
-    border-spacing: 15px 15px;
-    width: 50%;
+img {
+    width: 100%;
 }
 
-thead {
-    text-align: left;
+.img-card {
+    width: 20rem;
+    border: 1px solid var(--line-color);
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--line-color);
+}
+
+.img-card-text {
+    background-color: var(--main-color);
+}
+
+.about-me {
+    background-color: #E6EFF6;
+    height: 50vh;
+}
+
+footer {
+    height: 30vh;
 }
