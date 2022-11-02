@@ -64,8 +64,16 @@ section > div {
 
 .skills > ul {
     display: flex;
-    gap: 6rem;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* .skills >ul >li {
+    padding-right: 8rem;
+}
+ */
+.skills {
+    text-align: center;
 }
 
 footer {
