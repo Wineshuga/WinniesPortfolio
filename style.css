@@ -15,6 +15,11 @@ h1 {
     font-family: 'sofia', sans-serif;
     font-size: 6.5rem;
 }
+
+h3 {
+    font-family: 'sofia', sans-serif;
+}
+
 hr {
     border-top: 1px;
     padding: 5px;
@@ -55,6 +60,12 @@ section > div {
     margin: auto;
     font-size: 2rem;
     font-family: 'Open Sans Light', sans-serif;
+}
+
+.skills > ul {
+    display: flex;
+    gap: 6rem;
+    flex-wrap: wrap;
 }
 
 footer {
