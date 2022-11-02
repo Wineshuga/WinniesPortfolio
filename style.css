@@ -18,6 +18,7 @@ h1 {
 
 h3 {
     font-family: 'sofia', sans-serif;
+    color: var(--text-and-line-color);
 }
 
 hr {
@@ -34,24 +35,29 @@ body {
 
 nav {
     font-size: 2.5rem;
-    padding: 2rem 16rem;
+    padding: 2rem 0;
     background-color: black;
     position: fixed;
     display: flex;
-    justify-content: right;
+    justify-content: space-evenly;
     opacity: 0.9;
     width: 100%;
     border-bottom: 1px dashed var(--text-and-line-color);
     border-top: 5px solid var(--highlight-color);
+    list-style: none;
 }
 
 nav > li > a{
     color: var(--text-and-line-color);
 }
 
+.intro {
+    padding-top: 5rem;
+}
+
 section {
     color: var(--text-and-line-color);
-    padding: 10rem 0 5rem 0;
+    padding: 5rem 0;
     border-bottom: 1px dashed var(--text-and-line-color);
 }
 
@@ -70,6 +76,7 @@ section > div {
 
 .skills {
     text-align: center;
+    line-height: 2;
 }
 
 .projects {
@@ -97,4 +104,22 @@ img {
 
 footer {
     height: 30vh;
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 2;
+}
+
+footer > ul > li > a{
+    color: var(--highlight-color);
+    font-size: 2rem;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+footer > h3 {
+    font-size: 2rem ;
 }
