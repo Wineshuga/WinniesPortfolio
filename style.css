@@ -1,7 +1,7 @@
 :root {
-    --main-color: antiquewhite;
-    --line-color: burlywood;
-    --text-color: brown;
+    /* --main-color: antiquewhite; */
+    --text-and-line-color: RGB(213, 208, 206);
+    --highlight-color: brown;
 }
 
 * {
@@ -11,57 +11,42 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: white;
+h1 {
+    font-family: 'sofia', sans-serif;
+    font-size: 6.5rem;
 }
 
-hr {
-    background-color: var(--line-color);
-    height: 2px;
-    border: none;
+body {
+    background-color:rgb(20, 16, 16);
+    font-family: 'Matchbook', sans-serif;
 }
 
 nav {
-    text-align: center;
-    font-size: 20px;
-    padding: 2rem;
-    background-color: var(--line-color);
+    font-size: 2.5rem;
+    padding: 2rem 16rem;
+    background-color: black;
     position: fixed;
+    display: flex;
+    justify-content: right;
+    opacity: 0.9;
     width: 100%;
+    border-bottom: 1px dashed var(--text-and-line-color);
+    border-top: 5px solid var(--highlight-color);
 }
 
-nav a {
-    color: var(--text-color);
+nav > li > a{
+    color: var(--text-and-line-color);
 }
 
 main {
-    color: var(--text-color);
-    max-width: 750px;
+    color: var(--text-and-line-color);
+    max-width: 65vw;
     margin: auto;
     padding-top: 20vh;
 }
 
-img {
-    width: 100%;
-}
-
-.img-card {
-    width: 20rem;
-    border: 1px solid var(--line-color);
-    margin: auto;
-    text-align: center;
-    font-size: 20px;
-    background-color: var(--line-color);
-}
-
-.img-card-text {
-    background-color: var(--main-color);
-}
-
-.about-me {
-    background-color: #E6EFF6;
-    height: 50vh;
-}
+/* .about-me {
+} */
 
 footer {
     height: 30vh;
