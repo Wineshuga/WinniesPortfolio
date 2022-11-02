@@ -71,6 +71,7 @@ section > div {
 .skills > ul {
     display: flex;
     flex-wrap: wrap;
+    gap: 2rem;
     justify-content: space-evenly;
 }
 
@@ -82,6 +83,7 @@ section > div {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 img {
@@ -122,4 +124,29 @@ footer > ul {
 
 footer > h3 {
     font-size: 2rem ;
+}
+
+@media screen and (max-width: 840px) and (min-width: 250px) {
+    section > div {
+        max-width: 90vw;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    p, li {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 250px) {
+    h1, h3 {
+        font-size: 2.5rem;
+    }
+
+    p, li, a {
+        font-size: 1rem;
+    }
 }
