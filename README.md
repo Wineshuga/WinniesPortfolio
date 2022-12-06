@@ -10,6 +10,8 @@ Some unnecessary pages were taken out: a contact page, registration page and a l
 <li>HTML</li>
 <li>CSS</li>
 </ul>
+<h3>Link</h3>
+<a href="https://wineshuga.netlify.app>Portfolio Link</a>
 <h3>Author</h3>
 <p>Nweneary Uzochukwu Winnie</p>
 <p>P.S Further updates will be made to the site</p>
