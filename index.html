@@ -1,85 +1,152 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
     <title>Wineshuga</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.cdnfonts.com/css/matchbook" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/sofia" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
-</head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/4dbfbae31e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-    <header>
-        <nav>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <body>
+    <header class="md:flex-shrink-0 align-center px-2 py-3">
+      <!-- mobile header -->
+      <div class="relative md:hidden flex">
+        <button type="button" class="ml-3" aria-expanded="false">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+
+        <div class="absolute">
+          <div
+            class="w-50 rounded-3xl text-sm"
+          >
+            <div class="">
+              <div
+                class="group bg-white opacity-90 relative flex gap-x-3 items-center p-1"
+              >
+                <div
+                  class="mt-1 flex h-11 w-11 flex-none items-center justify-center bg-gray-50"
+                >
+                  <i class="fa-brands fa-linkedin">
+                    <a href="https://linkedin.com/in/wineshuga"></a>
+                  </i>
+                </div>
+                <div>
+                  <a
+                    href="https://linkedin.com/in/wineshuga"
+                    class="font-semibold text-gray-900"
+                  >
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+              <div
+                class="group bg-white opacity-90 relative flex gap-x-3 items-center p-1"
+              >
+                <div
+                  class="mt-1 flex h-11 w-11 flex-none items-center justify-center bg-gray-50"
+                >
+                  <i class="fa-brands fa-twitter">
+                    <a href="https://twitter.com/wineshuga"></a>
+                  </i>
+                </div>
+                <div>
+                  <a
+                    href="https://twitter.com/wineshuga"
+                    class="font-semibold text-gray-900"
+                  >
+                    Twitter
+                  </a>
+                </div>
+              </div>
+              <div
+                class="group bg-white opacity-90 relative flex gap-x-3 items-center rounded-lg p-1"
+              >
+                <div
+                  class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50"
+                >
+                  <i class="fa-solid fa-envelope">
+                    <a href="mailto:uzochukwuwinnie@gmail.com"></a>
+                  </i>
+                </div>
+                <div>
+                  <a
+                    href="mailto:uzochukwuwinnie@gmail.com"
+                    class="font-semibold text-gray-900"
+                  >
+                    eMail
+                  </a>
+                </div>
+              </div>
+              <div
+                class="group bg-white opacity-90 relative flex gap-x-3 items-center rounded-lg p-1"
+              >
+                <div
+                  class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50"
+                >
+                  <i class="fa-brands fa-medium">
+                    <a href="https://medium.com/wineshuga"></a>
+                  </i>
+                </div>
+                <div>
+                  <a
+                    href="https://medium.com/wineshuga"
+                    class="font-semibold text-gray-900"
+                  >
+                    Medium
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="text-center w-fit m-auto">
+          <div>
+            <h1 class="text-2xl font-bold text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">Winnie's Space</h1>
+          </div>
+          <div>
+            <a href="#works">Works</a>
+            <a href="#articles">Articles</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </section>
+      </div>
+      <!-- desktop header -->
+      <div class="max-md:hidden">
+        <nav class="">
+          <i class="fa-brands fa-linkedin">
+            <a href="https://linkedin.com/in/wineshuga"></a>
+          </i>
+          <i class="fa-brands fa-twitter">
+            <a href="https://twitter.com/wineshuga"></a>
+          </i>
+          <i class="fa-solid fa-envelope">
+            <a href="mailto:uzochukwuwinnie@gmail.com"></a>
+          </i>
+          <i class="fa-brands fa-medium">
+            <a href="https://medium.com/wineshuga"></a>
+          </i>
         </nav>
+        <section class="">
+          <h1 class="text-2xl font-bold text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">Winnie's Space</h1>
+          <a href="#works">Works</a>
+          <a href="#articles">Articles</a>
+          <a href="#contact">Contact</a>
+        </section>
+      </div>
     </header>
     <main>
-        <section>
-            <div class="intro">
-                <h1>Hello. I'm Winnie </h1>
-                <p> ... a Frontend Web Developer. I code, read and write (sometimes).
-                    I workhard at trying to make everyday good, so I love fun activities
-                    with friends and enjoy a lot of me-time too.
-                </p>
-            </div>
-        </section>
-        <section id="skills">
-            <div class="skills">
-                <h3>My Skills</h3>
-                <ul>
-                    <li>Html</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                    <li>Git and GitHub</li>
-                </ul>
-            </div>
-        </section>
-        <section id="projects">
-            <div class="projects">
-                <div class="img-box">
-                    <img src="images/blog site.png" alt="thumbnail">
-                    <a href="https://wineshuga.github.io/blog-site">Click Here - A Blog Site.</a>
-                </div>
-                <div class="img-box">
-                    <img src="images/AwesomeBooks.PNG" alt="thumbnail">
-                    <a href="https://wineshuga.github.io/AwesomeBooks/">Click Here - AwesomeBooks App</a>
-                </div>
-                <div class="img-box">
-                    <img src="images/EmpowerHer.PNG" alt="thumbnail">
-                    <a href="https://wineshuga.github.io/EmpowerHER-Foundation/">Click Here - EmpowerHer</a>
-                </div>
-                <div class="img-box">
-                    <img src="images/LoyaltyApp.PNG" alt="thumbnail">
-                    <a href="https://wineshuga.github.io/loyalty-app">Click Here - Loyalty App</a>
-                </div>
-                <div class="img-box">
-                    <img src="images/FrontendMentor project 1 (2).png" alt="thumbnail">
-                    <a href="https://drop-down-nav.netlify.app/">Click Here - Nav Page</a>
-                </div>
-                <div class="img-box">
-                    <img src="images/ToDo list.PNG" alt="thumbnail">
-                    <a href="https://wineshuga.github.io/to-do-list/dist">Click Here - To Do App</a>
-                </div>
-            </div>
-        </section>
+      <section id="intro"></section>
+      <section id="works"></section>
+      <section id="articles"></section>
+      <section id="contact"></section>
     </main>
-    <footer id="#contact" class="contact">
-        <h3>Contact Me</h3>
-        <ul>
-            <li><a href="https://twitter.com/Wineshuga" target="_blank">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/uziwinnie" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:uzochukwuwinnie@gmail.com" target="_blank">Email</a></li>
-            <li><a href="https://github.com/wineshuga" target="_blank">GitHub</a></li>
-        </ul>
-    </footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
