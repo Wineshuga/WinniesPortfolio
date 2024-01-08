@@ -28,90 +28,45 @@
     <header class="md:flex-shrink-0 align-center px-2 py-3">
       <!-- mobile header -->
       <div class="relative md:hidden flex">
-        <button type="button" class="ml-3" aria-expanded="false">
-          <i class="fa-solid fa-bars"></i>
+        <button
+          type="button"
+          class="ml-1 absolute top-2"
+          id="menu-btn"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-ellipsis-vertical text-3xl ham-icon"></i>
+          <i class="fa-solid fa-xmark text-2xl hidden close-icon"></i>
         </button>
 
-        <div class="absolute z-10">
-          <div class="w-50 rounded-3xl text-sm">
-            <div>
-              <i class="fa-solid fa-xmark"></i>
-              <div
-                class="group bg-white relative flex gap-x-3 items-center rounded-lg p-1"
-              >
-                <div
-                  class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-zinc-300"
-                >
-                  <a href="https://linkedin.com/in/wineshuga"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                </div>
-                <div>
-                  <a
-                    href="https://linkedin.com/in/wineshuga"
-                    class="font-semibold text-gray-900"
-                  >
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
-              <div
-                class="group bg-white opacity-90 relative flex gap-x-3 items-center rounded-lg p-1"
-              >
-                <div
-                  class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-zinc-300"
-                >
-                  <a href="https://twitter.com/wineshuga"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                </div>
-                <div>
-                  <a
-                    href="https://twitter.com/wineshuga"
-                    class="font-semibold text-gray-900"
-                  >
-                    Twitter
-                  </a>
-                </div>
-              </div>
-              <div
-                class="group bg-white opacity-90 relative flex gap-x-3 items-center rounded-lg p-1"
-              >
-                <div
-                  class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-zinc-300"
-                >
-                  <a href="mailto:uzochukwuwinnie@gmail.com"
-                    ><i class="fa-solid fa-envelope"></i
-                  ></a>
-                </div>
-                <div>
-                  <a
-                    href="mailto:uzochukwuwinnie@gmail.com"
-                    class="font-semibold text-gray-900"
-                  >
-                    eMail
-                  </a>
-                </div>
-              </div>
-              <div
-                class="group bg-white opacity-90 relative flex gap-x-3 items-center rounded-lg p-1"
-              >
-                <div
-                  class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-zinc-300"
-                >
-                  <a href="https://medium.com/@wineshuga"
-                    ><i class="fa-brands fa-medium"></i
-                  ></a>
-                </div>
-                <div>
-                  <a
-                    href="https://medium.com/@wineshuga"
-                    class="font-semibold text-gray-900"
-                  >
-                    Medium
-                  </a>
-                </div>
-              </div>
+        <div class="absolute top-12 z-10 hidden side-bar">
+          <div class="w-50 rounded-3xl text-sm transition-all duration-1000 ease-in-out">
+            <div
+              class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-zinc-300"
+            >
+              <a href="https://linkedin.com/in/wineshuga"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <div
+              class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-zinc-300"
+            >
+              <a href="https://twitter.com/wineshuga"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            <div
+              class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-zinc-300"
+            >
+              <a href="mailto:uzochukwuwinnie@gmail.com"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+            <div
+              class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-zinc-300"
+            >
+              <a href="https://medium.com/@wineshuga"
+                ><i class="fa-brands fa-medium"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -228,5 +183,7 @@
       <section id="contact"></section>
     </main>
     <footer></footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
