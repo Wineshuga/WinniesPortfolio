@@ -13,12 +13,26 @@
 
 h1 {
     font-family: 'sofia', sans-serif;
-    font-size: 6.5rem;
+    font-size: 4rem;
+    text-align: center;
 }
 
 h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
     font-family: 'sofia', sans-serif;
     color: var(--text-and-line-color);
+}
+
+h4 > a {
+    color: white;
+    cursor: pointer;
+}
+
+h4 > a:hover, nav a:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
 }
 
 hr {
@@ -37,10 +51,11 @@ nav {
     font-size: 2.5rem;
     padding: 2rem 0;
     background-color: black;
+    font-weight: 700;
     position: fixed;
     display: flex;
     justify-content: space-evenly;
-    opacity: 0.9;
+    opacity: 0.7;
     width: 100%;
     border-bottom: 1px dashed var(--text-and-line-color);
     border-top: 5px solid var(--highlight-color);
@@ -48,61 +63,69 @@ nav {
 }
 
 nav > li > a{
-    color: var(--text-and-line-color);
+    color: white;
 }
 
 .intro {
     padding-top: 5rem;
-    text-align: center;
+}
+
+.intro > p {
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-size: 20px;
 }
 
 section {
-    color: var(--text-and-line-color);
-    padding: 5rem 0;
+    color: white;
+    padding: 2rem 0;
     border-bottom: 1px dashed var(--text-and-line-color);
 }
 
 section > div {
-    max-width: 65vw;
+    max-width: 85vw;
     margin: auto;
-    font-size: 2rem;
     font-family: 'Open Sans Light', sans-serif;
 }
 
 .skills > ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2rem 4rem;
     justify-content: space-evenly;
 }
 
 .skills {
     text-align: center;
-    line-height: 2;
+    font-size: 20px;
 }
 
 .projects {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 4rem;
+    border: 5px solid var(--highlight-color);
+}
+
+.img-box {
+    width: 30%;
+}
+
+.img-box > a {
+    color: white;
 }
 
 img {
     width: 100%;
 }
 
-.img-box {
-    width: 15rem;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 5px;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: var(--highlight-color);
+.img-description {
+    width: 70%;
 }
 
-.img-box > a{
-    color: var(--text-and-line-color);
+.img-description p {
+    margin-top: 0.5rem;
 }
 
 footer {
@@ -112,9 +135,13 @@ footer {
     line-height: 2;
 }
 
-footer > ul > li > a{
+footer > ul > li > a {
     color: var(--highlight-color);
     font-size: 2rem;
+}
+
+footer a:hover {
+    color: white;
 }
 
 footer > ul {
@@ -127,27 +154,46 @@ footer > h3 {
     font-size: 2rem ;
 }
 
-@media screen and (max-width: 840px) and (min-width: 250px) {
+@media screen and (max-width: 950px) {
     section > div {
         max-width: 90vw;
         margin: auto;
     }
 
-    h1 {
-        font-size: 6rem;
+    .intro p, .skills li {
+        font-size: 16px;
     }
 
-    p, li {
-        font-size: 1.6rem;
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .img-box {
+        width: 30rem;
+    }
+
+    .img-description {
+        width: 100%;
+        text-align: justify;
     }
 }
 
-@media screen and (max-width: 450px) and (min-width: 250px) {
-    h1, h3 {
+@media screen and (max-width: 532px) and (min-width: 250px) {
+    h1 {
         font-size: 2.5rem;
     }
 
-    p, li, a {
-        font-size: 1rem;
+    nav li {
+        font-size: 24px;
+    }
+
+    .skills > ul {
+        gap: 1rem;
+    }
+
+    .img-box {
+        width: 15rem;
     }
 }
