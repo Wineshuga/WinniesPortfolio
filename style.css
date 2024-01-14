@@ -1,199 +1,269 @@
 :root {
-    /* --main-color: antiquewhite; */
-    --text-and-line-color: RGB(213, 208, 206);
-    --highlight-color: brown;
+  /* --main-color: antiquewhite; */
+  --text-and-line-color: RGB(213, 208, 206);
+  --highlight-color: brown;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-family: 'sofia', sans-serif;
-    font-size: 4rem;
-    text-align: center;
+  font-family: "sofia", sans-serif;
+  font-size: 4rem;
+  text-align: center;
 }
 
 h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-family: 'sofia', sans-serif;
-    color: var(--text-and-line-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "sofia", sans-serif;
+  color: var(--text-and-line-color);
 }
 
 h4 > a {
-    color: white;
-    cursor: pointer;
+  color: white;
+  cursor: pointer;
 }
 
-h4 > a:hover, nav a:hover {
-    color: var(--highlight-color);
-    text-decoration: underline;
+h4 > a:hover,
+nav a:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
 }
 
 hr {
-    border-top: 1px;
-    padding: 5px;
-    border-style: dashed;
-    border-color: var(--text-and-line-color);
+  border-top: 1px;
+  padding: 5px;
+  border-style: dashed;
+  border-color: var(--text-and-line-color);
 }
 
 body {
-    background-color:rgb(20, 16, 16);
-    font-family: 'Matchbook', sans-serif;
+  background-color: rgb(20, 16, 16);
+  font-family: "Matchbook", sans-serif;
 }
 
 nav {
-    font-size: 2.5rem;
-    padding: 2rem 0;
-    background-color: black;
-    font-weight: 700;
-    position: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    opacity: 0.7;
-    width: 100%;
-    border-bottom: 1px dashed var(--text-and-line-color);
-    border-top: 5px solid var(--highlight-color);
-    list-style: none;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  background-color: black;
+  font-weight: 700;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0.7;
+  width: 100%;
+  border-bottom: 1px dashed var(--text-and-line-color);
+  border-top: 5px solid var(--highlight-color);
+  list-style: none;
 }
 
-nav > li > a{
-    color: white;
+nav > li > a {
+  color: white;
 }
 
 .intro {
-    padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 .intro > p {
-    margin-bottom: 1rem;
-    text-align: justify;
-    font-size: 20px;
+  margin-bottom: 1rem;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  margin: auto !important;
 }
 
 section {
-    color: white;
-    padding: 2rem 0;
-    border-bottom: 1px dashed var(--text-and-line-color);
+  color: white;
+  padding: 2rem 0;
+  border-bottom: 1px dashed var(--text-and-line-color);
 }
 
 section > div {
-    max-width: 85vw;
-    margin: auto;
-    font-family: 'Open Sans Light', sans-serif;
+  max-width: 85vw;
+  margin: auto;
+  font-family: "Open Sans Light", sans-serif;
 }
 
 .skills > ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem 4rem;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
+  justify-content: space-evenly;
 }
 
 .skills {
-    text-align: center;
-    font-size: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .projects {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    display: flex;
-    gap: 4rem;
-    border: 5px solid var(--highlight-color);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  gap: 4rem;
+  border: 5px solid var(--highlight-color);
 }
 
 .img-box {
-    width: 30%;
+  width: 30%;
 }
 
 .img-box > a {
-    color: white;
+  color: white;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .img-description {
-    width: 70%;
+  width: 70%;
 }
 
 .img-description p {
-    margin-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.project-btn {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: var(--text-and-line-color);
+  border: none;
+  color: var(--highlight-color);
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  background-color: rgb(242, 205, 205);
+}
+
+.form {
+  width: 25rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+textarea,
+.btn {
+  padding: 1rem 0.5rem;
+  margin-bottom: 0.1rem;
+  font-family: "Open Sans Light", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: var(--highlight-color);
+}
+
+.btn {
+  width: 8rem;
+  background-color: var(--highlight-color);
+  color: var(--text-and-line-color);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 1px;
+}
+
+.btn:hover {
+  background-color: rgb(126, 47, 47);
 }
 
 footer {
-    height: 30vh;
-    margin-top: 2rem;
-    text-align: center;
-    line-height: 2;
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 2;
 }
 
 footer > ul > li > a {
-    color: var(--highlight-color);
-    font-size: 2rem;
+  color: var(--highlight-color);
+  font-size: 2rem;
 }
 
 footer a:hover {
-    color: white;
+  color: white;
 }
 
 footer > ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
 }
 
 footer > h3 {
-    font-size: 2rem ;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 950px) {
-    section > div {
-        max-width: 90vw;
-        margin: auto;
-    }
+  section > div {
+    max-width: 90vw;
+    margin: auto;
+  }
 
-    .intro p, .skills li {
-        font-size: 16px;
-    }
+  .intro p,
+  .skills li {
+    font-size: 16px;
+  }
 
-    .projects {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    .img-box {
-        width: 30rem;
-    }
+  .img-box {
+    width: 30rem;
+  }
 
-    .img-description {
-        width: 100%;
-        text-align: justify;
-    }
+  .img-description {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .project-btn {
+    width: 10rem;
+  }
 }
 
 @media screen and (max-width: 532px) and (min-width: 250px) {
-    h1 {
-        font-size: 2.5rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 
-    nav li {
-        font-size: 24px;
-    }
+  nav li {
+    font-size: 24px;
+  }
 
-    .skills > ul {
-        gap: 1rem;
-    }
+  .skills > ul {
+    gap: 1rem;
+  }
 
-    .img-box {
-        width: 15rem;
-    }
+  .img-box {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .form {
+    width: 15rem;
+  }
+
+  footer > ul > li > a {
+    font-size: 24px;
+  }
 }
