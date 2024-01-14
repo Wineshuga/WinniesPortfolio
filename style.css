@@ -136,7 +136,8 @@ img {
 }
 
 .project-btn {
-  margin-top: 1rem;
+  width: 10rem;
+  margin: 0.5rem 0;
   padding: 0.8rem;
   background-color: var(--text-and-line-color);
   border: none;
@@ -235,8 +236,13 @@ footer > h3 {
     text-align: justify;
   }
 
+  .project-btn-div {
+    width: 15rem;
+    margin: auto;
+  }
+
   .project-btn {
-    width: 10rem;
+    width: 100%;
   }
 }
 
