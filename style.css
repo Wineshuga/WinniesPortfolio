@@ -294,7 +294,7 @@ section > div {
 .skills > ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem 4rem;
+  gap: 4rem;
   justify-content: space-evenly;
 }
 
@@ -302,6 +302,7 @@ section > div {
   text-align: center;
   font-size: 20px;
   width: 50rem;
+  height: 50vh;
 }
 
 .projects {
@@ -458,8 +459,12 @@ footer > h3 {
     font-size: 24px;
   }
 
+  .skills {
+    height: fit-content;
+  }
+
   .skills > ul {
-    gap: 1rem;
+    gap: 3rem;
   }
 
   .img-box {
