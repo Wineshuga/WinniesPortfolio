@@ -438,6 +438,7 @@ footer {
 footer > ul > li > a {
   color: var(--highlight-color);
   font-size: 2rem;
+  font-weight: bold;
 }
 
 footer a:hover {
