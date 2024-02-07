@@ -263,6 +263,15 @@ nav > li > a {
   color: white;
 }
 
+.resume-btn {
+  background-color: var(--highlight-color);
+  padding: 0.5rem 1rem;
+}
+
+.resume-btn:hover {
+  background-color: white;
+}
+
 .intro {
   padding-top: 8rem;
   width: 60rem;
@@ -491,7 +500,7 @@ footer > h3 {
   }
 }
 
-@media screen and (max-width: 532px) and (min-width: 250px) {
+@media screen and (max-width: 600px) and (min-width: 250px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -510,6 +519,14 @@ footer > h3 {
 
   .skills > ul {
     gap: 3rem;
+  }
+
+  .project-btn-div {
+    width: 15rem;
+  }
+
+  .project-btn {
+    width: 6.5rem;
   }
 
   .img-box {
@@ -547,14 +564,6 @@ footer > h3 {
 }
 
 @media (max-width: 425px) {
-  .project-btn-div {
-    width: 15rem;
-  }
-
-  .project-btn {
-    width: 6.5rem;
-  }
-
   .form {
     width: 15rem;
   }
