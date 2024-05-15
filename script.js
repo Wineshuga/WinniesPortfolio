@@ -7,6 +7,7 @@ const skills = [
   "Tailwind CSS",
   "Bootstrap",
   "JavaScript",
+  "TypeScript",
   "HTML5",
   "CSS3",
   "Test-Driven Development",
