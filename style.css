@@ -306,14 +306,27 @@ section > div {
   flex-wrap: wrap;
   gap: 4rem;
   justify-content: space-evenly;
-  list-style-type: " <> ";
+  list-style: none;
 }
 
 .skills {
   text-align: center;
-  font-size: 20px;
   width: 50rem;
   height: 50vh;
+}
+
+.skills li {
+  border: 1px solid var(--highlight-color);
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: ease-in-out 0.4s;
+  text-align: center;
+  font-weight: bold;
+}
+
+.skills li:hover {
+  cursor: pointer;
+  padding: 0.5rem 3rem;
 }
 
 .projects {
